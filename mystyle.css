@@ -1,0 +1,123 @@
+/*******************FONTS****/
+@font-face {
+  font-family: FreckleFace;
+  src: url(fonts/freckle.ttf);
+}
+
+@font-face {
+  font-family: Amatic;
+  src: url(fonts/amaticbold.ttf);
+}
+
+@font-face {
+  font-family: SourceCodePro;
+  src: url(fonts/SourceCodePro.ttf);
+}
+
+/*****************************/
+h2{
+  display: flex;
+  font-family: FreckleFace;
+  justify-content: center;
+  font-size: 60px;
+}
+
+body{
+  display: flex;
+  font-family: SourceCodePro;
+  justify-content: center;
+  background: #ff8c00;
+  height:100%;
+  background: linear-gradient(0deg, #ffc680, #ff8c00) no-repeat;
+}
+
+
+
+#container{
+  position: relative;
+  top: 100px;
+  width: 500px;
+  border-radius: 25px;
+}
+
+#content-box{
+  background: #ffe8cc;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 25px;
+  background: repeating-linear-gradient(
+      to right,
+      #ffc680,
+      #ffc680 10px,
+      #ffddb3 10px,
+      #ffddb3 20px
+      )
+}
+
+ul{
+  list-style-type: none;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  position: relative;
+  font-size: 20px;
+  border-radius: 25px;
+  font-family: Amatic;
+}
+
+a{
+  text-decoration: none;
+  background: #fff4e6;
+  padding:15px;
+  border-radius: 25px;
+
+}
+
+a:hover {
+  background: #0080ff;
+}
+
+#slider {
+  overflow: hidden;
+}
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+  }
+#slider figure img{
+  width: 20%;
+  float: left;
+}
+@keyframes slider{
+    0%{
+      left: 0;
+    }
+    20%{
+      left: 0;
+    }
+    25%{
+      left: -100%;
+    }
+    45%{
+      left: -100%;
+    }
+    50%{
+      left: -200%;
+    }
+    70%{
+      left: -200%;
+    }
+    75%{
+      left: -300%;
+    }
+    95%{
+      left: -300%;
+    }
+    100%{
+      left: -400%;
+    }
+}
