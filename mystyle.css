@@ -26,9 +26,11 @@ body{
   display: flex;
   font-family: SourceCodePro;
   justify-content: center;
-  background: #ff8c00;
-  height:100%;
-  background: linear-gradient(0deg, #ffc680, #ff8c00) no-repeat;
+  background: #f28e26;
+  background-image: url("pawprints5.jpg");
+  background-repeat: no-repeat;
+
+
 }
 
 
@@ -44,6 +46,7 @@ body{
   background: #ffe8cc;
   padding: 15px;
   margin-bottom: 15px;
+  margin-top: 15px;
   border-radius: 25px;
   background: repeating-linear-gradient(
       to right,
@@ -75,7 +78,7 @@ a{
 }
 
 a:hover {
-  background: #0080ff;
+  background: #ff99bb;
 }
 
 #slider {
